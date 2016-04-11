@@ -1,0 +1,19 @@
+{
+  "name": "wordpress-fresh-theme",
+  "version": "0.0.0",
+  "homepage": "https://github.com/stton/wordpress-fresh-theme",
+  "authors": [
+    "Steven Ton <stton310@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

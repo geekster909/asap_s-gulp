@@ -1,0 +1,7 @@
+.DS_Store
+.sass-cache/
+
+node_modules/
+assets/images/src/
+
+bower_components/

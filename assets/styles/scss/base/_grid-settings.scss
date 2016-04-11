@@ -1,0 +1,18 @@
+@import "../bower_components/neat/app/assets/stylesheets/_neat-helpers.scss"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: em(1088);
+
+// Neat Breakpoints
+$screen-xs: em(480); 
+$screen-sm: em(768); 
+$screen-md: em(992); 
+$screen-lg: em(1200); 
+
+$mobile-screen-up: new-breakpoint(min-width $screen-xs);
+$tablet-screen-up: new-breakpoint(min-width $screen-sm);
+$desktop-screen-up: new-breakpoint(min-width $screen-md);
+$lg-desktop-screen-up: new-breakpoint(min-width $screen-lg);

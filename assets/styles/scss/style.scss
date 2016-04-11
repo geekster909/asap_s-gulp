@@ -1,0 +1,29 @@
+/*
+ * SMACSS SCSS
+ * Inspired by SMACSS http://smacss.com
+ * Author: Steven Ton
+ *
+ * https://github.com/stton/smacss-scss
+ *
+ */
+
+/* Base -Bourbon, Neat, Bitters */
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "base/grid-settings";
+@import "bower_components/neat/app/assets/stylesheets/_neat.scss";
+@import "base/base";
+@import "base/mixins";
+
+/* Layout */
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+
+/* Modules */
+@import "modules/animations";
+@import "modules/btn";
+@import "modules/icons";
+
+/* Utilities */
+@import "utilities/functions";
