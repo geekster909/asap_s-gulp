@@ -1,9 +1,9 @@
 /*
  * SMACSS SCSS
  * Inspired by SMACSS http://smacss.com
- * Author: Steven Ton
+ * Author: 530MEDIALAB
  *
- * https://github.com/stton/smacss-scss
+ * https://530medialab.com
  *
  */
 
@@ -23,6 +23,7 @@
 /* Modules */
 @import "modules/animations";
 @import "modules/btn";
+@import "modules/helpers";
 @import "modules/icons";
 
 /* Utilities */

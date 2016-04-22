@@ -11,7 +11,7 @@
 ## Installation
 Clone into Themes directory
 
-    git clone git@github.com:stton/asap_s.git <project-name>
+    git clone http://github.co/stton/asap_s.git <project-name>
 
 Navigate to theme directory and install Node Packages
 
