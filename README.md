@@ -11,7 +11,7 @@
 ## Installation
 Clone into Themes directory
 
-    git clone http://github.co/geekster909/asap_s.git <project-name>
+    git clone http://github.com/geekster909/asap_s.git <project-name>
 
 Navigate to theme directory and install Node Packages
 
@@ -33,6 +33,7 @@ Navigate to 'assets/styles/scss/' and install bower packages
     * Search for: `Text Domain: asap_s` and replace with: `Text Domain: <project-name>` in style.css.
     * Search for: <code>&nbsp;asap_s</code> and replace with: <code>&nbsp;<project-name></code>
     * Search for: `asap_s-` and replace with: `<project-name>-`
+    * Search for: `/asap_s` and replace with: `/<project-name>-`
 2. Update BrowserSync proxy and port
     
         proxy: 'local.<project-name>.com',
