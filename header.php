@@ -19,7 +19,7 @@
 
 <?php wp_head(); ?>
 <script type="text/javascript">
-    grunticon(["/content/themes/asap_s/dist/images/svg/icons.data.svg.css", "/content/themes/asap_s/dist/images/svg/icons.data.png.css", "/content/themes/asap_s/dist/images/svg/icons.fallback.css"]);
+    grunticon(["/content/themes/asap_s/dist/images/svg/icons.data.svg.css", "/content/themes/asap_s/dist/images/svg/icons.data.png.css", "/content/themes/asap_s/dist/images/svg/icons.fallback.css"], grunticon.svgLoadedCallback);
 </script>
 </head>
 
