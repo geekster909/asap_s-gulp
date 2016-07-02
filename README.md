@@ -5,25 +5,17 @@
 ## Features
 
 ## Prerequisite
-* Requires node.js, grunt-cli, and bower
+* Requires node.js, gulp
 * Requires local WordPress environment
 
 ## Installation
 Clone into Themes directory
 
-    git clone http://github.com/geekster909/asap_s.git <project-name>
+    git clone http://github.com/geekster909/asap_s-gulp.git <project-name>
 
 Navigate to theme directory and install Node Packages
 
     npm install
-
-Install Bower packages
-    
-    bower install
-    
-Navigate to 'assets/styles/scss/' and install bower packages
-
-    bower install
 
 
 ## Configuration
@@ -37,16 +29,12 @@ Navigate to 'assets/styles/scss/' and install bower packages
 2. Update BrowserSync proxy and port
     
         proxy: 'local.<project-name>.com',
-        port: 8080
+        port: 3000
     
     
 ## Usage
 
-`grunt` for developing
-
-`grunt images` for image processing
-
-`grunt build` for production
+`gulp` for developing
 
 
 ##### CSS Workflow
@@ -60,71 +48,12 @@ Navigate to 'assets/styles/scss/' and install bower packages
 
 ##### Image Workflow
 * assets/images/* => dist/images/
-
-
-
-
-
-##### Installing a bower package
-*normalize.css is already included by default*
-
-1. Navigate to theme directory
-
-         bower install --save normalize.css
-2. Open Gruntfile.js and update bowercopy
-
-        files : {
-            'styles/vendor/' : 'normalize.css/normalize.css'                                 
-        }
-    *This will copy normalize.css from bower_componenets and put it inside our styles/vendor* directory*
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
+   
 
 ## Images
 
 all images in /assets/images/
     - will get minified
-    
-svg's in /assets/images/
-    - will get minified to /assets/images/svgmin
-    - grunticon ran on min svg's to dist/
     
 ## BowerSync
 
