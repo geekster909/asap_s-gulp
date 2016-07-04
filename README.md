@@ -5,7 +5,7 @@
 ## Features
 
 ## Prerequisite
-* Requires node.js, gulp
+* Requires node.js, gulp, and bower
 * Requires local WordPress environment
 
 ## Installation
@@ -16,6 +16,12 @@ Clone into Themes directory
 Navigate to theme directory and install Node Packages
 
     npm install
+
+Install Bower packages
+
+Navigate to 'assets/styles/scss/' and install bower packages
+
+bower install
 
 
 ## Configuration
@@ -28,8 +34,7 @@ Navigate to theme directory and install Node Packages
     * Search for: `/asap_s` and replace with: `/<project-name>-`
 2. Update BrowserSync proxy and port
     
-        proxy: 'local.<project-name>.com',
-        port: 3000
+        proxy: 'local.<project-name>.com'
     
     
 ## Usage

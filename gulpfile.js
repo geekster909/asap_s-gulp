@@ -7,18 +7,12 @@ var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 
-var neat = require('node-neat').includePaths;
-var bourbon = require('node-bourbon').includePaths;
-
 gulp.task('default', ['sass', 'vendor-sass', 'compress', 'vendor-compress', 'watch'])
 
 
 gulp.task('sass', function(){
   return gulp.src('assets/styles/scss/style.scss')
-    .pipe(sass({
-      includePaths: bourbon,
-      includePaths: neat
-    }).on('error', sass.logError)) // Using gulp-sass
+    .pipe(sass().on('error', sass.logError)) // Using gulp-sass
     .pipe(autoprefixer())
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.reload({
