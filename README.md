@@ -1,6 +1,8 @@
-# ASAP_s 
+# ASAP_s
 
 *DOCUMENTATION IN PROGRESS*
+
+A gulp boiler plate
 
 ## Features
 
@@ -21,7 +23,7 @@ Install Bower packages
 
 Navigate to 'assets/styles/scss/' and install bower packages
 
-bower install
+    bower install
 
 
 ## Configuration
@@ -32,14 +34,16 @@ bower install
     * Search for: <code>&nbsp;asap_s</code> and replace with: <code>&nbsp;<project-name></code>
     * Search for: `asap_s-` and replace with: `<project-name>-`
     * Search for: `/asap_s` and replace with: `/<project-name>-`
-2. Update BrowserSync proxy and port
+2. Update BrowserSync proxy
     
         proxy: 'local.<project-name>.com'
     
     
 ## Usage
 
-`gulp` for developing
+command `gulp` for developing
+
+command `gulp compile` for compiling (scss, js, images)
 
 
 ##### CSS Workflow
@@ -47,12 +51,11 @@ bower install
 * assets/styles/vendor/*.css => dist/styles/vendor.css
 
 ##### JavaScript Workflow
-* assets/scripts/main.js => dist/scripts/main.min.js
+* assets/scripts/*.js => dist/scripts/*.min.js
 * assets/scripts/vendor/*.js => dist/scripts/vendor.min.js
-* assets/scripts/*.js (!main.js) => dist/scripts/*.min.js
 
 ##### Image Workflow
-* assets/images/* => dist/images/
+* assets/images/* => dist/images/*
    
 
 ## Images
@@ -67,4 +70,9 @@ set local url
 ## Watching
 
 scss changes
+
 js changes
+
+image changes
+
+
