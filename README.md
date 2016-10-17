@@ -2,7 +2,7 @@
 
 *DOCUMENTATION IN PROGRESS*
 
-A gulp boiler plate
+A gulp boiler plate for a wordpress theme
 
 ## Features
 
@@ -28,12 +28,11 @@ Navigate to 'assets/styles/scss/' and install bower packages
 
 ## Configuration
 1. 5-step find and replace on the name in all the templates
-    * Search for: `'asap_s'` and replace with: `'<project-name>'`
-    * Search for: `asap_s_` and replace with: `<project-name>_`
+    * Search for: `'asap_s'` and replace with: `'<project-name>'` (inside single quotations) to capture the text domain.
+    * Search for: `asap_s_` and replace with: `<project-name>_` to capture all the function names.
     * Search for: `Text Domain: asap_s` and replace with: `Text Domain: <project-name>` in style.css.
-    * Search for: <code>&nbsp;asap_s</code> and replace with: <code>&nbsp;<project-name></code>
-    * Search for: `asap_s-` and replace with: `<project-name>-`
-    * Search for: `/asap_s` and replace with: `/<project-name>-`
+    * Search for: <code>&nbsp;asap_s</code> and replace with: <code>&nbsp;<project-name></code> (with a space before it) to capture DocBlocks.
+    * Search for: `asap_s-` and replace with: `<project-name>-` to capture prefixed handles.
 2. Update BrowserSync proxy
     
         proxy: 'local.<project-name>.com'
@@ -41,9 +40,9 @@ Navigate to 'assets/styles/scss/' and install bower packages
     
 ## Usage
 
-command `gulp` for developing
+`gulp` command for developing
 
-command `gulp compile` for compiling (scss, js, images)
+`gulp compile` command for compiling (scss, js, images)
 
 
 ##### CSS Workflow
