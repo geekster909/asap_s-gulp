@@ -39,6 +39,9 @@ a {
     outline: none;
   }
 }
+:focus {
+  outline: none;
+}
 
 hr {
   border-bottom: $base-border;

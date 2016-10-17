@@ -9,6 +9,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['sass', 'vendor-sass', 'compress', 'vendor-compress', 'watch'])
 
+gulp.task('compile', ['sass', 'vendor-sass', 'compress', 'vendor-compress', 'images']);
 
 gulp.task('sass', function(){
   return gulp.src('assets/styles/scss/style.scss')
@@ -32,7 +33,7 @@ gulp.task('vendor-sass', function(){
 
 gulp.task('browserSync', function() {
   browserSync.init({
-      proxy: ""
+      proxy: "local.wordpress.com"
   })
 });
 
@@ -68,6 +69,7 @@ gulp.task('watch', ['browserSync'], function () {
     gulp.watch(['assets/styles/vendor/*.scss', 'assets/styles/vendor/*.css'], ['vendor-sass']);
     gulp.watch('assets/scripts/*.js', ['compress']);
     gulp.watch('assets/scripts/vendor/*.js', ['vendor-compress']);
+    gulp.watch('assets/images/*.+(png|jpg|gif|svg)', ['images']);
     //gulp.watch('*.html', browserSync.reload); 
     gulp.watch('dist/scripts/*.min.js', browserSync.reload); 
 });
