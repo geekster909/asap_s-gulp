@@ -75,7 +75,7 @@ gulp.task('compress', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('dist/scripts'));
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(notify(notifyGeneric));
 });
 
@@ -84,7 +84,7 @@ gulp.task('vendor-compress', function() {
   	.pipe(plumber({errorHandler: onError}))
     .pipe(concat('vendor.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/scripts'));
+    .pipe(gulp.dest('dist/scripts'))
     .pipe(notify(notifyGeneric));
 });
 
